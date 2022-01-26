@@ -19,11 +19,17 @@ body{
 
 /*--------------Header-------------*/
 
+
 header{
     display: flex;
     justify-content: space-between;
     align-items: center;
     height: 15vh;
+}
+
+div .fa-bars{
+    font-size: 20px;
+    display: none;
 }
 
 header h1{
@@ -144,6 +150,11 @@ footer section ul li:nth-of-type(1){
 
     header nav{
         display: none;
+    }
+
+    div .fa-bars{
+        display: flex;
+        font-size: 20px;
     }
 
     /*main*/
