@@ -27,6 +27,37 @@ header{
     height: 15vh;
 }
 
+.navigation{
+    border-bottom: 1px solid #EAEAEB;
+    text-align: right;
+    height: 70px;
+    line-height: 70px;
+    display: none;
+}
+
+.menu{
+    margin: 0 30px 0 0;
+}
+
+.menu a {
+    text-decoration: none;
+    color: gray;
+    line-height: 70px;
+    clear: right;
+}
+
+label{
+    margin: 0 40px 0 0;
+    font-size: 26px;
+    line-height: 70px;
+    display: none;
+    width: 26px;
+    float: right;
+}
+#toggle{
+    display: none;
+}
+
 div .fa-bars{
     font-size: 20px;
     display: none;
@@ -150,6 +181,30 @@ footer section ul li:nth-of-type(1){
 
     header nav{
         display: none;
+    }
+
+    .navigation{
+        display: flex;
+    }
+    label{
+        display: block;
+        cursor: pointer;
+
+    }
+
+    .menu{
+        text-align: center;
+        width: 100%;
+        display: none;
+
+    }
+    .menu a{
+        display: block;
+        border-bottom: 1px solid #EAEAEB;
+        margin: 0;
+    }
+    #toggle:checked + .menu{
+        display: block;
     }
 
     div .fa-bars{
